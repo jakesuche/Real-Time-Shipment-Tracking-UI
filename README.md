@@ -18,19 +18,61 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+# Lagos Vehicle Tracking System
 
-To learn more about Next.js, take a look at the following resources:
+This project is a real-time vehicle tracking system for Lagos, Nigeria. It provides a user interface for tracking multiple shipments, displaying their routes on a map, and showing detailed information about each shipment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## UI Reference
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project's UI reference [Tracking Dashboard](https://dribbble.com/shots/25487768-Zhippes-Tracking-Dashboard) by Pixelab Studio.
 
-## Deploy on Vercel
+![Tracking Dashboard](https://cdn.dribbble.com/userupload/18498219/file/original-15f85920b53a73cc13b44d5d904f5ed4.png?resize=1024x762&vertical=center)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Real-time tracking of multiple shipments
+- Interactive map display using Leaflet.js
+- Detailed shipment information cards with timeline view
+- Search functionality for shipments
+- Simulated data updates every 5 seconds
+- Modern, clean UI design with status indicators
+
+## Tech Stack
+
+- Next.js 13 with App Router
+- React 18
+- TypeScript
+- Tailwind CSS
+- Leaflet.js for maps
+- Lucide React for icons
+
+
+## Structure
+src/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── components/
+│       ├── alert.tsx
+│       ├── badge.tsx
+│       ├── button.tsx
+│       └── input.tsx
+├── hooks/
+│   ├── use-shipment-socket.ts
+│   └── use-shippment.data.ts
+├── lib/
+│   ├── mockItemsData.ts
+│   ├── mockShipmentData.ts
+│   └── utils.ts
+├── types/
+└── views/
+    ├── shipment-card.tsx
+    └── shipment-map.tsx
+
+config/
+├── .gitignore
+├── eslint.config.mjs
+├── next
