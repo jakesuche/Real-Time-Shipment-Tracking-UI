@@ -1,4 +1,4 @@
-import type { Shipment, ShipmentStatus, TimelineItem } from "../types/shipment";
+import type { Shipment,  TimelineItem } from "../types/shipment";
 
 // const statuses: ShipmentStatus["status"][] = ["pending", "in_transit", "delivered", "canceled"];
 
