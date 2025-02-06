@@ -40,7 +40,7 @@ This project's UI reference [Tracking Dashboard](https://dribbble.com/shots/2548
 
 ## Tech Stack
 
-- Next.js 13 with App Router
+- Next.js 15 with App Router
 - React 18
 - TypeScript
 - Tailwind CSS
