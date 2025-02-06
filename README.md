@@ -49,6 +49,8 @@ This project's UI reference [Tracking Dashboard](https://dribbble.com/shots/2548
 
 
 ## Structure
+
+```
 src/
 ├── app/
 │   ├── favicon.ico
@@ -76,3 +78,4 @@ config/
 ├── .gitignore
 ├── eslint.config.mjs
 ├── next
+```
