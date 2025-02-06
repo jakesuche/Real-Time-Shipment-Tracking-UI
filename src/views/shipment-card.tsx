@@ -47,7 +47,7 @@ export function ShipmentCard({ shipment, isSelected, onSelect }: ShipmentCardPro
             {/* Timeline line */}
             <div className="absolute left-[9px] top-[10px] bottom-[10px] w-[2px] bg-border" />
 
-            {shipment.timeline.map((item, index) => (
+            {shipment.timeline.map((item) => (
               <div key={item.status} className="relative">
                 <div className="flex items-start gap-4">
                   <div

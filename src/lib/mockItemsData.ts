@@ -1,6 +1,6 @@
 import type { Shipment, ShipmentStatus, TimelineItem } from "../types/shipment";
 
-const statuses: ShipmentStatus["status"][] = ["pending", "in_transit", "delivered", "canceled"];
+// const statuses: ShipmentStatus["status"][] = ["pending", "in_transit", "delivered", "canceled"];
 
 // Lagos bounds
 const LAT_MIN = 6.393834;
@@ -25,8 +25,8 @@ function generateRoute(start: [number, number], end: [number, number], numPoints
 }
 
 function generateTimeline(): TimelineItem[] {
-  const now = new Date();
-  const baseTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 0);
+
+ 
 
   return [
     {
@@ -101,7 +101,7 @@ export function generateMockLagosShipments(count: number): Shipment[] {
       lastUpdate: new Date().toISOString(),
       driver: {
         id: `DRV${i + 1}`,
-        name: `Kevin Hartanto`,
+        name: `uchechukwu chidiebere`,
         avatar: `/avarta.svg`,
       },
       timeline: generateTimeline(),
